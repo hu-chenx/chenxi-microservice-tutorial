@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+
+service Palindrome {
+
+  rpc findPalindrome(PalindromeRequest) returns (PalindromeResponse) {}
+ 
+}
+
+message PalindromeRequest {
+
+   string input = 1;
+
+}
+
+
+message PalindromeResponse {
+   string palindrome = 2;
+}
